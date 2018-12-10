@@ -1,29 +1,29 @@
-var myArray = []
+var myArray = new Array()
+myArray[0] = 8;
+myArray[1] = 'hello'
+console.log(myArray)
 
-myArray[0] = 25
-myArray[1] = 35
-myArray[2] = true
-myArray[3] = 'Hello'
+var myCar = new Object()
+myCar.maxSpeed = 50
+myCar.driver = 'Shaun'
 
-myArray[2] = false
+myCar.drive = function() {
+    console.log('now driving')
+}
 
-
-var myArray2 = [10, 20, 'hi', false]
-console.log(myArray2)
-
-var myarray3 = new Array()
-var myarray4 = new Array(5)
-myarray4[1] = true
-
-
-myArray2.sort()
-myArray2.reverse()
+var myVar = 'hey'
+myCar.drive()
 
 
+var myCar2 = {
+    maxSpeed: 75, 
+    driver: 'Net Ninja', 
+    drive:function(speed, time) {
+        console.log(speed * time)
+    }
+}
 
 
-console.log(myArray2)
-
-
+console.log(myCar2.drive(50, 3))
 
 
