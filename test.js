@@ -1,15 +1,29 @@
-var str = "hello world"
+var myArray = []
 
-//ambil posisi dari nomor 3 sebanyak 9 ( yang ke 9 ga di sertakan )
-var str2 = str.slice(2,9)
+myArray[0] = 25
+myArray[1] = 35
+myArray[2] = true
+myArray[3] = 'Hello'
 
-//     l l o   w o r
-// 0 1 2 3 4 5 6 7 8 9 
-console.log(str2)
+myArray[2] = false
 
 
-var tags = 'meat, ham, salami, prok, beef, chicken'
-console.log(tags)
+var myArray2 = [10, 20, 'hi', false]
+console.log(myArray2)
 
-var tagsArray = tags.split(',')
-console.log(tagsArray)
+var myarray3 = new Array()
+var myarray4 = new Array(5)
+myarray4[1] = true
+
+
+myArray2.sort()
+myArray2.reverse()
+
+
+
+
+console.log(myArray2)
+
+
+
+
