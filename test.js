@@ -7,7 +7,21 @@ var myCar2 = {
     }
 }
 
+//constructor
+var Car = function(maxSpeed, driver) {
+    this.maxSpeed = maxSpeed
+    this.driver = driver
+    this.drive = function(speed, time) {
+        console.log(speed * time)
+    }
+    this.logDriver = function() {
+        console.log('driver name is ' + this.driver)
+    }
+}
 
-myCar2.logDrive()
+//object
+var myCar = new Car(70, 'Ninja Man')
+var myCar2 = new Car(80, 'Shaun')
+
 
 
